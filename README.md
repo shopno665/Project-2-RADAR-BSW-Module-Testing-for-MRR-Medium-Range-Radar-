@@ -1,4 +1,4 @@
-# Project 2: RADAR BSW Module Testing for MRR (Medium Range Radar)
+# Project 2: RADAR BSW Module Testing for MRR (Dummy Project)
 
 ## Project Overview
 This project focuses on testing the **RADAR Base Software (BSW) modules** of the **Medium Range Radar (MRR)** system, covering:
