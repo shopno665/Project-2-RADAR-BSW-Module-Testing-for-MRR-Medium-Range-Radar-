@@ -8,6 +8,7 @@ This project focuses on testing the **RADAR Base Software (BSW) modules** of the
 
 The goal is to ensure **performance, reliability, and compliance** of radar functionalities in real-time automotive applications.
 
+---
 
 ## Roles & Responsibilities
 
@@ -17,11 +18,15 @@ The goal is to ensure **performance, reliability, and compliance** of radar func
 - Collaboration with developers for issue resolution
 - Ensuring compliance with quality standards
 
+---
+
 ##  Tools & Technologies Used
 - **CANalyzer / CANoe** (Rest Bus Simulation & Testing)
 - **CAPL Scripting** (Communication Access Programming Language)
 - **CAPL / Python (Automation scripts)Excel / JIRA / RQM** (for test automation & analysis)
 - **Excel / JIRA / RQM** (Defect & Test Management)
+
+---
 
 ## 📂 Folder Structure
 ```
@@ -46,7 +51,7 @@ RADAR_BSW_MRR_Testing/
 └── screenshots/             # Execution results/screenshots
     └── sample_execution.png
 ```
-
+---
 
 ##  How to Run/Test the Project
 1. Open `/documents/BSW_requirement.xlsx` for requirements reference.
@@ -57,6 +62,7 @@ RADAR_BSW_MRR_Testing/
    or load CAPL scripts in CANoe.  
 4. Capture and save execution results in /screenshots/.
 
+---
 
 ## Example Test Case Format
 
@@ -64,7 +70,7 @@ RADAR_BSW_MRR_Testing/
 | ------------ | -------------- | ------------------- | ---------------------- | ------------------------------------- | ------ |
 | TC\_COM\_01  | R-3141         | ECU in normal state | Send ECU reset command | ECU should reset and enter INIT state | Pass   |
 
-
+---
 
 📜 License
 
