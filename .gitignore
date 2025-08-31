@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs & temp
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Excel temporary files
+~$*.xls*
+*.bak
+
+# Diagrams, cache, outputs
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# Automation tools
+*.exe
+*.dll
+
+# CANoe / CAPL related
+*.cfg
+*.bak
+*.ldb
+*.cfx
+
+# dSPACE / HIL tools
+*.dsp
+*.trc
+*.dat
+
+# Ignore test results except screenshots
+/testcases_and_execution/*_results*
+/screenshots/*.bak
