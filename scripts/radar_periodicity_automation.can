@@ -1,0 +1,89 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  dword gCycCheckid;
+  const long kmin_cycle_time_RADAR_ACC_msg1=495;//msg1
+  const long kmax_cycle_time_RADAR_ACC_msg1=505;//msg1
+  const long kmin_cycle_time_RADAR_ACC_msg2=595;//msg2
+  const long kmax_cycle_time_RADAR_ACC_msg2=605;//msg2
+}
+void maintest()
+{
+  testReportFileName("Radar tx testing");
+  testModuleTitle("Radar message periodicity check");
+  testModuleDescription(" check each message cycle time properly");
+  Tc1_radar_acc_msg1();//msg1
+  Tc2_radar_acc_msg2();//msg2
+}
+//msg1................................
+testcase Tc1_radar_acc_msg1()
+{
+  float cycmincycletime;
+  float cycmaxcycletime;
+  cycmincycletime=kmin_cycle_time_RADAR_ACC_msg1;
+  cycmaxcycletime=kmax_cycle_time_RADAR_ACC_msg1;
+testCaseTitle ("Tc1","check cycle time of message RADAR_ACC_msg1");
+  gCycCheckid= ChkStart_MsgAbsCycleTimeViolation(RADAR_ACC_msg1,cycmincycletime,cycmaxcycletime);
+  checkmsg(cycmincycletime,cycmaxcycletime);
+}
+  //msg2.................................
+testcase Tc2_radar_acc_msg2()
+{
+  float cycmincycletime;
+  float cycmaxcycletime;
+  cycmincycletime=kmin_cycle_time_RADAR_ACC_msg2;
+  cycmaxcycletime=kmax_cycle_time_RADAR_ACC_msg2;
+testCaseTitle ("Tc2","check cycle time of message RADAR_ACC_msg2");
+  gCycCheckid= ChkStart_MsgAbsCycleTimeViolation(RADAR_ACC_msg2,cycmincycletime,cycmaxcycletime);
+  checkmsg(cycmincycletime,cycmaxcycletime);
+}
+///
+checkmsg( float acycmincycletime, float acycmaxcycletime)
+{
+  long avg;
+  long min;
+  long max;
+  char buffer[100];
+
+testWaitForTimeout(5000);
+avg= ChkQuery_StatEventFreePeriodAvg(gCycCheckid)/10.0;// Assume returned values are in 0.1 ms units ? convert to ms
+min= ChkQuery_StatEventFreePeriodMin(gCycCheckid)/10.0;
+max= ChkQuery_StatEventFreePeriodMax(gCycCheckid)/10.0;
+if(ChkQuery_NumEvents(gCycCheckid)> 0)
+{
+  testStepFail ("TC","radar has not transmitted the message as expected time");
+  snprintf( buffer,elCount(buffer),"the valid cycle time is % .0fms- %.0fms",acycmincycletime,acycmaxcycletime);
+  testStepFail(" ",buffer);
+  snprintf(buffer,elcount(buffer),"the average cycle time is %.0dms",avg);
+  testStepFail(" ",buffer);
+  snprintf(buffer,elcount(buffer),"the minimum cycle time is %.0dms",min);
+  testStepFail(" ",buffer);
+  snprintf(buffer,elcount(buffer),"the maximum cycle time is %.0dms",max);
+  testStepFail(" ",buffer);
+}
+else
+{
+   testStepPass ("TC"," radar has  transmitted the message as expected time?");
+  snprintf( buffer,elCount(buffer),"the valid cycle time is % .0fms- %.0fms",acycmincycletime,acycmaxcycletime);
+  testStepPass(" ",buffer);
+  snprintf(buffer,elcount(buffer),"the average cycle time is %.0dms",avg);
+  testStepPass(" ",buffer);
+  snprintf(buffer,elcount(buffer),"the minimum cycle time is %.0dms",min);
+  testStepPass(" ",buffer);
+  snprintf(buffer,elcount(buffer),"the maximum cycle time is %.0dms",max);
+  testStepPass(" ",buffer);
+  
+}
+}
+
+
+
+
+
+
+

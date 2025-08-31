@@ -1,0 +1,29 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message RADAR_ACC_msg1 ACC_MSG1;
+  message RADAR_ACC_msg2 ACC_MSG2;
+  
+  mstimer t1, t2;
+}
+
+on start
+{
+  setTimer(t1, 500);
+  setTimer(t2, 600);
+}
+on timer t1
+{
+  output(ACC_MSG1);
+  setTimer(t1, 500);
+}
+on timer t2
+{
+  output(ACC_MSG2);
+  setTimer(t2, 600);
+}
