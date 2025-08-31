@@ -11,17 +11,17 @@ The goal is to ensure **performance, reliability, and compliance** of radar func
 
 ## Roles & Responsibilities
 
--Requirement analysis for CD, COM, FM modules
--Test case design & review
--Test execution & defect tracking
--Collaboration with developers for issue resolution
--Ensuring compliance with quality standards
+- Requirement analysis for CD, COM, FM modules
+- Test case design & review
+- Test execution & defect tracking
+- Collaboration with developers for issue resolution
+- Ensuring compliance with quality standards
 
 ##  Tools & Technologies Used
 - **CANalyzer / CANoe** (Rest Bus Simulation & Testing)
 - **CAPL Scripting** (Communication Access Programming Language)
-- **CAPL / Python (Automation scripts)** (for test automation & analysis)
-- **Excel / JIRA / RQM ** (Defect & Test Management)
+- **CAPL / Python (Automation scripts)Excel / JIRA / RQM** (for test automation & analysis)
+- **Excel / JIRA / RQM** (Defect & Test Management)
 
 ## 📂 Folder Structure
 ```
